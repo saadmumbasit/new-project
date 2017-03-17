@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Html and js</title>
+</head>
+<script type="text/javascript" language="javascript">
+function fun1()
+{
+var Fname=document.getElementById('txtfname').value;
+var Lname=document.getElementById('txtlname').value;
+var Scname=document.getElementById('txtscname').value;
+var Dob=document.getElementById('dob').value;
+var oGender=document.getElementsByName('rdbgender').length;
+for(var i=0 ;i<oGender.length ;i++)
+	{
+		if(oGender[i].checked)
+		{
+			alert(oGender[i].value);
+		}
+	}	
+}
+
+
+</script>
+
+<body>
+<div style="width:800px; height:auto; background-color:#00000;align:center; float:left;">
+<div style="background-color:#FC0;width:800px; height:50px">
+</div>
+<div style="width:800px; height:auto; background-color:#00000;float:left;">
+<form method="post" action="index2.html" style="color:#F30; background-color:#000000; font-family:Verdana, Geneva, sans-serif; font-weight:bold; alignment-adjust:central">
+<div style="align:center;background-color:#000000; margin:30px">
+First  Name<input type="text" id="txtfname" placeholder="Required" required /><br>
+Last   Name<input type="text" id="txtlname" placeholder="Required" required /><br>
+Screen Name<input type="text" id="txtscname" placeholder="Required" required /><br>
+Date Of Birth<input type="date" id="dob"required/><br>
+Gender<input type="radio" name="rdbgender" value+"Male"Checked/>MALE<br>
+<input type="radio" name="rdbgender" value="Female" />FEMALE<br>
+Country
+<select id="count">
+<option value="1">-----SELECT------</option>
+<option value="2">Pakistan</option>
+<option value="3">India</option>
+<option value="4">Bangladesh</option>
+</select>
+<br>
+Email<input type="email" required/><br>
+Phone<input type="number" required/><br>
+Password<input type="password" name="pass" required/><br>
+Confirm Password<input type="password" name="pass" required/><br>
+<input type="radio" name="rdbterms" Checked/>I AGREE<br>
+<input type="submit" name="btnsub" value="Submit" onclick="alert('You logged in')"/>
+<input type="button" name="btnsub2" value="Cancel"/>
+</div>
+<div style="background-color:#FC0;width:800px; height:50px">
+</div>
+</form>
+</div>
+</body>
+</html>
